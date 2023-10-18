@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\mysql-connector-j-8.1.0.jar",
+            "c:\\Users\\Lenovo\\Downloads\\jcalendar-tz-1.3.3-4.jar",
+            "Libraries/rs2xml.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\Lenovo\\Downloads\\mysql-connector-j-8.1.0\\mysql-connector-j-8.1.0\\mysql-connector-j-8.1.0.jar"
+        ]
+    }
+}
