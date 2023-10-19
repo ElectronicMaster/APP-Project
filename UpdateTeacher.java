@@ -48,90 +48,93 @@ public class UpdateTeacher extends JFrame implements ActionListener{
 
         JLabel lblname = new JLabel("Name : ");
         lblname.setBounds(100, 150, 100, 30);
-        lblname.setFont(new Font("Tahoma",Font.ITALIC,20));
+        lblname.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblname);
 
         textfieldName = new JTextField();
         textfieldName.setBounds(200, 150, 150, 30);
+        textfieldName.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldName);
 
         JLabel lblSubject = new JLabel("Subject : ");
         lblSubject.setBounds(400, 150, 300, 30);
-        lblSubject.setFont(new Font("serif",Font.BOLD,20));
+        lblSubject.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblSubject);
 
         textfieldSubject = new JTextField();
         textfieldSubject.setBounds(600, 150, 150, 30);
+        textfieldSubject.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldSubject);
 
         JLabel lblempID = new JLabel("Emp ID : ");
         lblempID.setBounds(100, 200, 300, 30);
-        lblempID.setFont(new Font("serif",Font.BOLD,20));
+        lblempID.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblempID);
 
         JLabel JLabelempID = new JLabel();
         JLabelempID.setBounds(200, 200, 150, 30);
-        JLabelempID.setFont(new Font("serif",Font.BOLD,20));
+        JLabelempID.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(JLabelempID);
 
         JLabel lblDOB = new JLabel("Date of Birth : ");
         lblDOB.setBounds(400, 200, 300, 30);
-        lblDOB.setFont(new Font("serif",Font.BOLD,20));
+        lblDOB.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblDOB);
 
         JLabel JLabelDOB = new JLabel();
         JLabelDOB.setBounds(600, 200, 150, 30);
-        JLabelDOB.setFont(new Font("serif",Font.BOLD,20));
+        JLabelDOB.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(JLabelDOB);
 
         JLabel lblAddress = new JLabel("Address : ");
         lblAddress.setBounds(100, 250, 300, 30);
-        lblAddress.setFont(new Font("serif",Font.BOLD,20));
+        lblAddress.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblAddress);
 
         textfieldAddress = new JTextField();
         textfieldAddress.setBounds(200, 250, 150, 30);
-        textfieldAddress.setFont(new Font("serif",Font.BOLD,20));
+        textfieldAddress.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldAddress);
         
         JLabel lblPhone = new JLabel("Phone Number : ");
         lblPhone.setBounds(400, 250, 300, 30);
-        lblPhone.setFont(new Font("serif",Font.BOLD,20));
+        lblPhone.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblPhone);
 
         textfieldPhone = new JTextField();
         textfieldPhone.setBounds(600, 250, 150, 30);
-        textfieldPhone.setFont(new Font("serif",Font.BOLD,20));
+        textfieldPhone.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldPhone);
 
         JLabel lblEmail = new JLabel("Email ID : ");
         lblEmail.setBounds(100, 300, 300, 30);
-        lblEmail.setFont(new Font("serif",Font.BOLD,20));
+        lblEmail.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblEmail);
 
         textfieldEmail = new JTextField();
         textfieldEmail.setBounds(200, 300, 150, 30);
-        textfieldEmail.setFont(new Font("serif",Font.BOLD,20));
+        textfieldEmail.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldEmail);
         
         JLabel lblQualification = new JLabel("Qualification : ");
         lblQualification.setBounds(400, 300, 300, 30);
-        lblQualification.setFont(new Font("serif",Font.BOLD,20));
+        lblQualification.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblQualification);
 
         textfieldQualification = new JTextField();
         textfieldQualification.setBounds(600, 300, 150, 30);
-        textfieldQualification.setFont(new Font("serif",Font.BOLD,20));
+        textfieldQualification.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldQualification);
 
         JLabel lblDepartment = new JLabel("Department : ");
         lblDepartment.setBounds(100, 350, 300, 30);
-        lblDepartment.setFont(new Font("serif",Font.BOLD,20));
+        lblDepartment.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblDepartment);
 
         String arrDepartment[] = {"CSC","ECE","BDA","MECH","COMMERCE","CIVIL","IT"};
         Department = new JComboBox<>(arrDepartment);
         Department.setBounds(225, 350, 150, 30);
+        lblDepartment.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(Department);
 
         // empID,DOB

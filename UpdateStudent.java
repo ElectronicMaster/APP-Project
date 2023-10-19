@@ -27,16 +27,16 @@ public class UpdateStudent extends JFrame implements ActionListener{
 
         JLabel heading = new JLabel("Update Student Details");
         heading.setBounds(50, 10, 500, 50);
-        heading.setFont(new Font("serif",Font.BOLD,30));
+        heading.setFont(new Font("Tahoma",Font.BOLD,30));
         add(heading);
 
         JLabel lblRollNumber = new JLabel("Select by Roll Number : ");
-        lblRollNumber.setBounds(50, 100, 200, 20);
-        lblRollNumber.setFont(new Font("serif",Font.PLAIN,20));
+        lblRollNumber.setBounds(50, 100, 250, 20);
+        lblRollNumber.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(lblRollNumber);
 
         cRollno = new Choice();
-        cRollno.setBounds(250, 100, 200, 20);
+        cRollno.setBounds(300, 100, 200, 20);
         add(cRollno);
 
         try{
@@ -51,98 +51,102 @@ public class UpdateStudent extends JFrame implements ActionListener{
 
         JLabel lblname = new JLabel("Name : ");
         lblname.setBounds(100, 150, 100, 30);
-        lblname.setFont(new Font("Tahoma",Font.ITALIC,20));
+        lblname.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblname);
 
         textfieldName = new JTextField();
         textfieldName.setBounds(200, 150, 150, 30);
+        textfieldName.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldName);
 
         JLabel lblFName = new JLabel("Father's Name : ");
         lblFName.setBounds(400, 150, 300, 30);
-        lblFName.setFont(new Font("serif",Font.BOLD,20));
+        lblFName.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblFName);
 
         textfieldFName = new JTextField();
         textfieldFName.setBounds(600, 150, 150, 30);
+        textfieldFName.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldFName);
 
         JLabel lblRollNo = new JLabel("Reg No : ");
         lblRollNo.setBounds(100, 200, 300, 30);
-        lblRollNo.setFont(new Font("serif",Font.BOLD,20));
+        lblRollNo.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblRollNo);
 
         JLabel JLabelRollno = new JLabel();
         JLabelRollno.setBounds(200, 200, 150, 30);
-        JLabelRollno.setFont(new Font("serif",Font.BOLD,20));
+        JLabelRollno.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(JLabelRollno);
 
         JLabel lblDOB = new JLabel("Date of Birth : ");
         lblDOB.setBounds(400, 200, 300, 30);
-        lblDOB.setFont(new Font("serif",Font.BOLD,20));
+        lblDOB.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblDOB);
 
         JLabel JLabelDOB = new JLabel();
         JLabelDOB.setBounds(600, 200, 150, 30);
-        JLabelDOB.setFont(new Font("serif",Font.BOLD,20));
+        JLabelDOB.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(JLabelDOB);
 
         JLabel lblAddress = new JLabel("Address : ");
         lblAddress.setBounds(100, 250, 300, 30);
-        lblAddress.setFont(new Font("serif",Font.BOLD,20));
+        lblAddress.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblAddress);
 
         textfieldAddress = new JTextField();
         textfieldAddress.setBounds(200, 250, 150, 30);
-        textfieldAddress.setFont(new Font("serif",Font.BOLD,20));
+        textfieldAddress.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldAddress);
         
         JLabel lblPhone = new JLabel("Phone Number : ");
         lblPhone.setBounds(400, 250, 300, 30);
-        lblPhone.setFont(new Font("serif",Font.BOLD,20));
+        lblPhone.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblPhone);
 
         textfieldPhone = new JTextField();
         textfieldPhone.setBounds(600, 250, 150, 30);
-        textfieldPhone.setFont(new Font("serif",Font.BOLD,20));
+        textfieldPhone.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldPhone);
 
         JLabel lblEmail = new JLabel("Email ID : ");
         lblEmail.setBounds(100, 300, 300, 30);
-        lblEmail.setFont(new Font("serif",Font.BOLD,20));
+        lblEmail.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblEmail);
 
         textfieldEmail = new JTextField();
         textfieldEmail.setBounds(200, 300, 150, 30);
-        textfieldEmail.setFont(new Font("serif",Font.BOLD,20));
+        textfieldEmail.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldEmail);
         
         JLabel lblYear = new JLabel("Year : ");
         lblYear.setBounds(400, 300, 300, 30);
-        lblYear.setFont(new Font("serif",Font.BOLD,20));
+        lblYear.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblYear);
 
         textfieldYear = new JTextField();
         textfieldYear.setBounds(600, 300, 150, 30);
-        textfieldYear.setFont(new Font("serif",Font.BOLD,20));
+        textfieldYear.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(textfieldYear);
 
         JLabel lblCourse = new JLabel("Course : ");
         lblCourse.setBounds(100, 350, 300, 30);
-        lblCourse.setFont(new Font("serif",Font.BOLD,20));
+        lblCourse.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblCourse);
 
         JLabel labelCourse = new JLabel();
         labelCourse.setBounds(200, 350, 150, 30);
+        labelCourse.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(labelCourse);
 
         JLabel lblDepartment = new JLabel("Department : ");
         lblDepartment.setBounds(400, 350, 300, 30);
-        lblDepartment.setFont(new Font("serif",Font.BOLD,20));
+        lblDepartment.setFont(new Font("Tahoma",Font.BOLD,20));
         add(lblDepartment);
 
         JLabel labelDepartment = new JLabel();
         labelDepartment.setBounds(600, 350, 150, 30);
+        labelDepartment.setFont(new Font("Tahoma",Font.PLAIN,20));
         add(labelDepartment);
 
         // ROllNo,DOB,Course,Department
