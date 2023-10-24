@@ -3,40 +3,40 @@ import java.sql.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class TeacherLeave extends JFrame implements ActionListener{
+public class StudentLeave extends JFrame implements ActionListener{
 
-    Choice cempID;
+    Choice crollno;
     Choice cduration;
     JTextField textfieldDate;
     JButton submit;
     JButton cancel;
 
-    TeacherLeave(){
+    StudentLeave(){
         setSize(500, 550);
         setLocation(525, 100);
         setLayout(null);
 
         getContentPane().setBackground(Color.white);
 
-        JLabel heading = new JLabel("Apply leave (Teacher) : ");
+        JLabel heading = new JLabel("Apply leave (Student) : ");
         heading.setBounds(40, 50, 300, 30);
         heading.setFont(new Font("Tahoma",Font.BOLD,20));
         add(heading);
 
-        JLabel lblRollNo = new JLabel("Search by Emp ID : ");
+        JLabel lblRollNo = new JLabel("Search by Roll Number : ");
         lblRollNo.setBounds(60, 100, 300, 20);
         lblRollNo.setFont(new Font("Tahoma",Font.PLAIN,15));
         add(lblRollNo);
 
-        cempID = new Choice();
-        cempID.setBounds(60, 130, 200, 20);
-        add(cempID);
+        crollno = new Choice();
+        crollno.setBounds(60, 130, 200, 20);
+        add(crollno);
 
         try{
             Conn c = new Conn();
-            ResultSet rs = c.s.executeQuery("Select * from teacher");
+            ResultSet rs = c.s.executeQuery("Select * from students");
             while(rs.next()){
-                cempID.add(rs.getString("empID"));
+                crollno.add(rs.getString("rollno"));
             }
         }catch(Exception e){
             e.printStackTrace();
@@ -51,7 +51,7 @@ public class TeacherLeave extends JFrame implements ActionListener{
         textfieldDate.setBounds(60, 210, 200, 20);
         add(textfieldDate);
 
-        JLabel lblDuration = new JLabel("Date : ");
+        JLabel lblDuration = new JLabel("Duration : ");
         lblDuration.setBounds(60, 260, 200, 20);
         lblDuration.setFont(new Font("Tahoma",Font.PLAIN,15));
         add(lblDuration);
@@ -87,11 +87,11 @@ public class TeacherLeave extends JFrame implements ActionListener{
 
     public void actionPerformed(ActionEvent ae){
         if(ae.getSource() == submit){
-            String empID = cempID.getSelectedItem();
+            String rollno = crollno.getSelectedItem();
             String date = textfieldDate.getSelectedText();
             String duration = cduration.getSelectedItem();
             
-            String query = "insert into teacherleave values('"+ empID +"','"+ date +"','"+ duration +"')";
+            String query = "insert into studentleave values('"+ rollno +"','"+ date +"','"+ duration +"')";
 
             try{
                 Conn c = new Conn();
@@ -107,6 +107,6 @@ public class TeacherLeave extends JFrame implements ActionListener{
     }
 
     public static void main(String[] args){
-        new TeacherLeave();
+        new StudentLeave();
     }
 }
